@@ -17,9 +17,12 @@
 <body>
     <div id="app">
         <div id="mainBlock">
-            <h1>Shelby Danielle</h1>        
-          <p>{{title}}</p>
-          <input type="text" v-on:input="changeTitle">
+            <h1 v-once>{{ title }}</h1>        
+            <p>{{ sayHello() }} - <a v-bind:href="link"> Google </a></p>
+            <h3>{{ yourName }}</h3>
+            <input type="text" v-on:input="changeYourName">
+            <hr>
+            <p v-html="finishedLink"></p>
         </div>
     </div>
   

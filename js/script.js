@@ -1,11 +1,18 @@
 new Vue({
     el: '#app',
     data: {
-        title: "Change me by typing below:"
+        title: "Shelby Danielle",
+        link: 'https://google.com', 
+        finishedLink: '<a href="http://google.com">Google</a>',
+        yourName: "your-name-here"
     },
     methods: {
-        changeTitle: function(event) {
-            this.title = event.target.value;
+        sayHello: function() {
+            this.title = 'Shelby'
+            return this.title;
+        },    
+        changeYourName: function(event){
+            this.yourName = event.target.value;
         }
     }
 });
