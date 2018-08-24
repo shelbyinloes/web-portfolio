@@ -1,12 +1,30 @@
-body {
-    background-image: URL("https://i.pinimg.com/originals/59/4f/3a/594f3a85a9c21647f25a76ad8861306a.png")
+body, html {
+   height: 100%;
+   margin: 0;
+}
+
+#app {
+    background-image: URL("../images/prettyStreet.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #mainBlock {
-    background-color: white;
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 30%;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 50%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    padding: 15px;
+    border: 5px solid #349BA3;
+}
+
+#exercise {
     padding: 20px;
-    border: 5px solid #ff839c;
 }
